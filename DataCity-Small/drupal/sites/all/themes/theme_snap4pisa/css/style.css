@@ -1,0 +1,144 @@
+/**
+ * Place your custom styles here.
+ */
+html {
+  font-family: sans-serif;
+}
+
+body {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-default {
+  background-color: #39A2D3;
+  color: #fff;
+  align-items: center;
+  border-color: #39A2D3;
+}
+
+.fitosan_content{
+}
+
+.main-container {
+  background: linear-gradient(to left, #e0e0e0, white);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 15px;
+  padding-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu.nav.navbar-nav.secondary a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: inherit;
+    font-weight: 400;
+}
+
+header nav ul {
+  padding-top: 10px;
+  padding-left: 20px!important;
+}
+
+section .region, .region-content {
+  padding-bottom: 50px;
+}
+
+.rt_topbar {
+  background-color: #e2001a;
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /*float: left;*/
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rt_topbar_menu {
+  float: left;
+  width: 66%;
+}
+
+.rt_topbar_menu h2 {
+  display: none;
+}
+
+.rt_topbar_menu ul{
+  float:left;
+  margin:0px;
+  padding: 0px;
+}
+.rt_topbar_menu li{
+  float:left;
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style: none;
+}
+
+.rt_topbar_notizia {
+  float: right;
+  width: 33%;
+  text-align: right;
+}
+
+header nav ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar.container-fluid {
+  margin-top: 10px!important;
+  /*padding-bottom: 30px;*/
+}
+.navbar {
+  min-height:0;
+  margin-bottom: 10px!important;
+}
+.navbar-brand {
+  color: #fff;
+  font-size: 26px;
+  padding: 8px 15px;
+  line-height: 110%;
+}
+
+.navbar-default .navbar-brand{
+    color:#fff;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color:#fff;
+}
+
+.rt_footer a {
+  color: #ccc;
+}
+
+.rt_footer p {
+  text-align: right;
+}
+
+.bg-info {
+    margin-bottom: 10px;
+}
+
+#block-block-2{
+  width: 200px;
+  float: right;
+}

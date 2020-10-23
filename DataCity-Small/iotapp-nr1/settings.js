@@ -17,12 +17,15 @@
 // The `https` setting requires the `fs` module. Uncomment the following
 // to make it available:
 var myappid='nr1'
+//Attenzione!!! Modifica per farlo funzionare dietro reverse proxy
+// var ownership_endpoint='https://snap4city.aedit.it/ownership-api/v1/list/'
 var ownership_endpoint='http://dashboard/ownership-api/v1/list/'
-var redirect_base_uri='http://dashboard/iotapp/'
-var keycloak_base_uri='http://dashboard/auth/realms/master'
+
+var redirect_base_uri='https://snap4city.aedit.it/iotapp/'
+var keycloak_base_uri='https://snap4city.aedit.it/auth/realms/master'
 var keycloak_clientid='nodered'
 var keycloak_clientsecret='cb7b3ab4-23d2-4912-a126-1ed811293cd5'
-var strategy_name='dashboard'        //same as in keycloak_base_uri
+var strategy_name='snap4city.aedit.it'        //same as in keycloak_base_uri
 var refresh_token_path='/data/refresh_token'
 
 var snap4cityauth=require("snap4city-user-authentication")
@@ -31,22 +34,24 @@ snap4cityauth.init(myappid, ownership_endpoint, redirect_base_uri, refresh_token
 module.exports = {
    APPID: myappid,
    //Aggiunto da me: URL di base del Dashboard Manager
-   dashboardManagerBaseUrl: 'http://dashboard/dashboardSmartCity',
+   dashboardManagerBaseUrl: 'https://snap4city.aedit.it/dashboardSmartCity',
    dashboardSecret:'45awwprty_zzq34',
 
     //Aggiunto da me: URL di base o IP cui risponde ciascun server HTTP integrato nei blocchetti dashIn
     dashInNodeBaseUrl: '0.0.0.0',
-    ownershipUrl: 'http://dashboard/ownership-api/',
+    ownershipUrl: 'https://snap4city.aedit.it/ownership-api/',
     //Aggiunto da me: URL cui risponde il WebSocket server
-    wsServerUrl: 'ws://dashboard/wsserver',
+    wsServerUrl: 'wss://snap4city.aedit.it/wsserver',
     wsServerRetryActive: 'yes',
     wsServerRetryTime: 120,
     wsReconnectTimeout: 1200,
-    myPersonalDataUrl: "http://dashboard/datamanager/api/v1/",
-    ascapiUrl: "http://dashboard/ServiceMap/api/v1",
-    dashboardSmartCityUrl: "http://dashboard/dashboardSmartCity/",
-    socketIOUrl: "http://dashboard",
+    myPersonalDataUrl: "https://snap4city.aedit.it/datamanager/api/v1/",
+    ascapiUrl: "https://snap4city.aedit.it/ServiceMap/api/v1",
+    dashboardSmartCityUrl: "https://snap4city.aedit.it/dashboardSmartCity/",
+    socketIOUrl: "https://snap4city.aedit.it",
     socketIOPath: "/synoptics/socket.io",
+
+    iotDirectoryUrl: "https://snap4city.aedit.it/iot-directory/",
 
 //    eventLogUri: 'http://192.168.1.43/RsyslogAPI/rsyslog.php',
 
@@ -54,7 +59,7 @@ module.exports = {
     keycloakClientid: keycloak_clientid,
     keycloakClientsecret: keycloak_clientsecret,
 
-    externalHost: 'dashboard',
+    externalHost: 'snap4city.aedit.it',
     externalPort: 1880,
 
     // the tcp port that the Node-RED web server is listening on
